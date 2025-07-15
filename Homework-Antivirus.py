@@ -37,7 +37,7 @@ def scan_file(file_path):
     except PermissionError:
         return "Permission denied"
 
-def scan_folder(folder_path:str):
+def scan_folder(folder_pathx:str):
     for root, dirs, files in os.walk(folder_path):
         for name in files:
             file_path = os.path.join(root, name)
